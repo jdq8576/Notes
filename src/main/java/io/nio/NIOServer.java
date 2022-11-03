@@ -35,7 +35,7 @@ public class NIOServer {
                         //给该客户端生成一个SocketChannel
                         SocketChannel accept = serverSocketChannel.accept();
                         accept.configureBlocking(false);
-                        //将当前的socketChannel注册到selector，关注事件为读事件，同时给socket Channel关联一个buffer
+                        //将当前的accept注册到selector，关注事件为读事件，同时给socket Channel关联一个buffer
                         accept.register(selector, SelectionKey.OP_READ, ByteBuffer.allocate(1024));
                         System.out.println("获取到一个客户端连接");
                         //如果是读事件

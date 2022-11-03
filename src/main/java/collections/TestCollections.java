@@ -4,6 +4,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+
 public class TestCollections {
     public static void main(String[] args) {
         Map<Integer, Integer> map = new HashMap<>();
