@@ -14,9 +14,14 @@ public class TestCallable {
             }
         });
         Thread t1 = new Thread(task, "thread_name");
-        
+
         t1.start();
 
-        System.out.println(task.get());
+        t1.join();
+
+        while (task.isDone()) {
+            System.out.println(task.get());
+            break;
+        }
     }
 }
