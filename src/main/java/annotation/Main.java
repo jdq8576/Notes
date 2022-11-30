@@ -1,4 +1,4 @@
-package interfacetest;
+package annotation;
 
 import java.lang.reflect.Field;
 

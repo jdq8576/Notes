@@ -1,4 +1,4 @@
-package interfacetest;
+package annotation;
 
 public class Person {
     @Range(min = 1, max = 20)
